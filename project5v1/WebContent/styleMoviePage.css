@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+span 
+{
+	width:33%; display:inline-block;
+}
+
+span.align-right 
+{ 
+	text-align:right; 
+}
+span.align-center
+{
+	text-align:center;
+}
+span a 
+{ 
+	font-size:70px; 
+}
+
+#Fablix
+{
+  	background-color: black;
+  	font-size:0; /* Fixes inline block spacing */
+}
+

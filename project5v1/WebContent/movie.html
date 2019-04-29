@@ -1,0 +1,162 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleMoviePage.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    
+    <title>Movie List</title>
+    <div id="Fablix">
+        <span>
+            <a href="index.html" style="color:red">Fablix</a>
+        </span>
+        <span class="align-center">
+        	<a href="movie.html?" style="color:red">Movies</a>
+        </span>
+        <span class="align-right">
+            <a href="cart.html" style="color:red">Cart</a>
+        </span>
+    </div>
+
+</head>
+
+
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Genres</button>
+  <div class="dropdown-content">
+    <a href="movie.html?genre=Action">Action</a>
+    <a href="movie.html?genre=Adult">Adult</a>
+    <a href="movie.html?genre=Adventure">Adventure</a>
+    <a href="movie.html?genre=Animation">Animation</a>
+    <a href="movie.html?genre=Biography">Biography</a>
+    <a href="movie.html?genre=Comedy">Comedy</a>
+    <a href="movie.html?genre=Crime">Crime</a>
+    <a href="movie.html?genre=Documentary">Documentary</a>
+    <a href="movie.html?genre=Drama">Drama</a>
+    <a href="movie.html?genre=Family">Family</a>
+    <a href="movie.html?genre=Fantasy">Fantasy</a>
+    <a href="movie.html?genre=History">History</a>
+    <a href="movie.html?genre=Horror">Horror</a>
+    <a href="movie.html?genre=Music">Music</a>
+    <a href="movie.html?genre=Musical">Musical</a>
+    <a href="movie.html?genre=Mystery">Mystery</a>
+    <a href="movie.html?genre=Reality-TV">Reality-TV</a>
+    <a href="movie.html?genre=Romance">Romance</a>
+    <a href="movie.html?genre=Sci-Fi">Sci-Fi</a>
+    <a href="movie.html?genre=Sport">Sport</a>
+    <a href="movie.html?genre=Thriller">Thriller</a>
+    <a href="movie.html?genre=War">War</a>
+    <a href="movie.html?genre=Western">Western </a>
+    
+    
+    
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">A-Z</button>
+  <div class="dropdown-content">
+    	<a href="movie.html?title=A">A</a>
+		<a href="movie.html?title=B">B</a>
+	    <a href="movie.html?title=C">C</a>
+	    <a href="movie.html?title=D">D</a>
+	    <a href="movie.html?title=E">E</a>
+	    <a href="movie.html?title=F">F</a>
+	    <a href="movie.html?title=G">G</a>
+		<a href="movie.html?title=H">H</a>
+		<a href="movie.html?title=I">I</a>
+		<a href="movie.html?title=J">J</a>
+		<a href="movie.html?title=K">K</a>
+		<a href="movie.html?title=L">L</a>
+		<a href="movie.html?title=M">M</a>
+		<a href="movie.html?title=N">N</a>
+		<a href="movie.html?title=O">O</a>
+		<a href="movie.html?title=P">P</a>
+		<a href="movie.html?title=Q">Q</a>
+		<a href="movie.html?title=R">R</a>
+		<a href="movie.html?title=S">S</a>
+		<a href="movie.html?title=T">T</a>
+		<a href="movie.html?title=U">U</a>
+		<a href="movie.html?title=V">V</a>
+		<a href="movie.html?title=W">W</a>
+		<a href="movie.html?title=X">X</a>
+		<a href="movie.html?title=Y">Y</a>
+		<a href="movie.html?title=Z">Z</a>
+			    
+    	 <a href="movie.html?title=0">0</a>
+		 <a href="movie.html?title=1">1</a>
+		 <a href="movie.html?title=2">2</a>
+		 <a href="movie.html?title=3">3</a>
+		 <a href="movie.html?title=4">4</a>
+		 <a href="movie.html?title=5">5</a>
+		 <a href="movie.html?title=6">6</a>
+		 <a href="movie.html?title=7">7</a>
+		 <a href="movie.html?title=8">8</a>
+		 <a href="movie.html?title=9">9</a>
+    
+    
+  </div>
+</div>
+
+
+<h1 style="background-color:white">Movie</h1>
+	<select id="viewCount" onchange="changeViewCount(this)">
+	  <option value="20">20</option>
+	  <option value="40">40</option>
+	  <option value="60">60</option>
+	</select>
+	
+	<table id=movie_table class="table table-striped">
+	    <thead>
+	    <tr>
+	    	<th>Id</th>
+	        <th><i class="fas fa-angle-up" onClick="sortTable('title ASC')"></i> Title <i class="fas fa-angle-down" onClick="sortTable('title DESC')"></i></th>
+	        <th>Year</th>
+	        <th>Director</th>
+	        <th>List of Genres</th>
+	        <th>List of Stars</th>
+	        <th><i class="fas fa-angle-up" onClick="sortTable('rating ASC')"></i>Rating <i class="fas fa-angle-down" onClick="sortTable('rating DESC')"></i></th>
+	        <th>Add To Cart</th>
+	    </tr>
+	    </thead>
+	    <tbody id=movie_table_body></tbody>
+	</table>
+	
+	<div id="page_buttons">
+	</div>
+	
+	
+	
+	
+	<button id ="red">R</button>
+	<button id ="green">G</button>
+	<button id ="blue">B</button>
+	<button id ="white">W</button>
+	
+	
+	<!-- Load jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+	<script src="style.js"></script>
+	<script src="browse-movie.js"></script>
+
+</body>
+</html>

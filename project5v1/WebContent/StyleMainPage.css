@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.container {
+  width: 500px;
+  clear: both;
+  margin: auto;
+  position: positive;
+  top: 100px; left: 0; bottom: 0; right: 0;
+  text-align: center;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+span 
+{
+	width:33%; display:inline-block;
+}
+
+span.align-right 
+{ 
+	text-align:right; 
+}
+span.align-center
+{
+	text-align:center;
+}
+span a 
+{ 
+	font-size:70px; 
+}
+
+#Fablix
+{
+  	background-color: black;
+  	font-size:0; /* Fixes inline block spacing */
+}
+
+#main
+{
+  text-align: center;
+}
+.resize
+{
+  width: 30%;
+  margin: auto;
+  position: relative;
+  top: 1px;
+}
+
+h3
+{
+	font-size: 40px;
+  	background-color: green;
+}
+/*
+Have to separate the fablix and h1 since the size won't change if not separating. 
+*/
+

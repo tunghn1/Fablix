@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="StyleMainPage.css">
+    <title>Fablix</title>
+    
+    <div id="Fablix">
+        <span>
+            <a href="index.html" style="color:red">Fablix</a>
+        </span>
+        <span class="align-center">
+        	<a href="movie.html?" style="color:red">Movies</a>
+        </span>
+        <span class="align-right">
+            <a href="cart.html" style="color:red">Cart</a>
+        </span>
+    </div>
+   	
+</head>
+
+<body onload="callCartServlet()">
+
+<div class="container">
+
+<form id="personalInfo-form" method="post" ACTION="#" >
+
+	      <label> First Name </label>
+	      <input id="firstname" type="text" name="firstname">
+	      <br>
+	      <label> Last Name </label>
+	      <input type="text" name="lastname">
+	      <br>
+	      <label> Email </label>
+	      <input type="email" name="email">
+	      <br>
+	      <label> Credit Card Number </label>
+	      <input type="number" name="ccNum" maxlength="16">
+	      <br>
+	      <label> Credit Card Exp Date </label>
+	      <input type="date" name="ccDate">
+	      <br>
+	      <label>Cart Items</label>
+	      <p id="cart"></p>
+		  <br>
+		  <input type="submit" VALUE="Continue To Checkout">
+</form>
+
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="checkOut.js"></script>
+	
+
+</body>
+</html>
