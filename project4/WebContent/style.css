@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+
+
+body
+{
+ 	background-image: url("https://images.pexels.com/photos/1769413/pexels-photo-1769413.jpeg?cs=srgb&dl=action-architecture-asphalt-1769413.jpg&fm=jpg");
+  	min-height: 380px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+
+} 
+
+
+div.well
+{
+  height: 250px;
+} 
+
+.Absolute-Center 
+{
+  margin: auto;
+  position: absolute;
+  top: 300px; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive 
+{
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+.Absolute-Center1
+{
+  text-align: center;
+  color: Red;
+  font-size: 700%;
+  position: relative;
+  top: 100px;
+}
+
+
+

@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleMoviePage.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    
+    <title>Movie List</title>
+    <div id="Fablix">
+        <span>
+            <a href="index.html" style="color:red">Fablix</a>
+        </span>
+        <span class="align-center">
+        	<a href="movie.html?" style="color:red">Movies</a>
+        </span>
+        <span class="align-right">
+            <a href="cart.html" style="color:red">Cart</a>
+        </span>
+    </div>
+</head>
+<body>
+
+
+<h1>Movie</h1>
+	<select id="viewCount" onchange="changeViewCount(this)">
+	  <option value="20">20</option>
+	  <option value="40">40</option>
+	  <option value="60">60</option>
+	</select>
+	
+	<table id=movie_table class="table table-striped">
+	    <thead>
+	    <tr>
+	    	<th><i class="fas fa-angle-up" onClick="sortTable('title ASC')"></i> Title <i class="fas fa-angle-down" onClick="sortTable('title DESC')"></i></th>
+	        <th>Year</th>
+	        <th>Director</th>
+	        <th>List of Genres</th>
+	        <th>List of Stars</th>
+	        <th><i class="fas fa-angle-up" onClick="sortTable('rating ASC')"></i>Rating <i class="fas fa-angle-down" onClick="sortTable('rating DESC')"></i></th>
+   	        <th>Add To Cart</th>
+	    </tr>
+	    </thead>
+	    <tbody id=movie_table_body></tbody>
+	</table>
+	
+	<div id="page_buttons">
+	</div>
+	
+	<button id ="red">R</button>
+	<button id ="green">G</button>
+	<button id ="blue">B</button>
+	<button id ="white">W</button>
+	
+	
+	<!-- Load jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="movieSearch.js"></script>
+	<script src="style.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Using jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+
+    <!-- Bootstrap for CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          
+<!--     <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<!--     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  
+	<link rel="stylesheet" href="StyleMainPage.css">
+	
+    <title>Fablix</title>
+    
+    <div id="Fablix">
+        <span>
+            <a href="index.html" style="color:red">Fablix</a>
+        </span>
+        <span class="align-center">
+        	<a href="movie.html?" style="color:red">Movies</a>
+        </span>
+        <span class="align-right">
+            <a href="cart.html" style="color:red">Cart</a>
+        </span>
+    </div>
+   	
+</head>
+
+<body>
+
+	<div class="container">
+		<h3>Full-text Search</h3>
+	    <div>
+	    	<input type="text" name="movie" id="autocomplete" 
+	       	class="autocomplete-searchbox form-control" 
+	       	placeholder="Search Movie"/>
+    	</div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+	    <h3>Advanced Search</h3>
+	    <form id="search-form" METHOD="get" ACTION="#">
+	      <label> Movie Title </label>
+	      <input type="text" name="title">
+	      <br>
+	      <label> Year of Release </label>
+	      <input type="text" name="year">
+	      <br>
+	      <label> Director </label>
+	      <input type="text" name="director">
+	      <br>
+	      <label> Actor </label>
+	      <input type="text" name="actor">
+	      <br>
+	      <input type="submit" VALUE="Search">
+	    </form>
+	    
+	    <br>
+	    <h3>Browsing</h3>
+	    <p>
+	      
+	      
+	      	<a href="movie.html?genre=Action">Action |</a>
+    		<a href="movie.html?genre=Adult">Adult |</a>
+    		<a href="movie.html?genre=Adventure">Adventure |</a>
+   			<a href="movie.html?genre=Animation">Animation |</a>
+    		<a href="movie.html?genre=Biography">Biography |</a>
+    		<a href="movie.html?genre=Comedy">Comedy |</a>
+    		<a href="movie.html?genre=Crime">Crime |</a>
+    		<a href="movie.html?genre=Documentary">Documentary |</a>
+    		<a href="movie.html?genre=Drama">Drama |</a>
+    		<a href="movie.html?genre=Family">Family |</a>
+    		<a href="movie.html?genre=Fantasy">Fantasy |</a>
+    		<a href="movie.html?genre=History">History |</a>
+    		<a href="movie.html?genre=Horror">Horror |</a>
+    		<a href="movie.html?genre=Music">Music |</a>
+    		<a href="movie.html?genre=Musical">Musical |</a>
+    		<a href="movie.html?genre=Mystery">Mystery |</a>
+    		<a href="movie.html?genre=Reality-TV">Reality-TV |</a>
+    		<a href="movie.html?genre=Romance">Romance |</a>
+    		<a href="movie.html?genre=Sci-Fi">Sci-Fi |</a>
+    		<a href="movie.html?genre=Sport">Sport |</a>
+    		<a href="movie.html?genre=Thriller">Thriller |</a>
+    		<a href="movie.html?genre=War">War |</a>
+    		<a href="movie.html?genre=Western">Western </a>
+	    </p>
+	  	<p>
+		     <br>
+		      <a href="movie.html?title=0">0 |</a>
+		      <a href="movie.html?title=1">1 |</a>
+		      <a href="movie.html?title=2">2 |</a>
+		      <a href="movie.html?title=3">3 |</a>
+		      <a href="movie.html?title=4">4 |</a>
+		      <a href="movie.html?title=5">5 |</a>
+		      <a href="movie.html?title=6">6 |</a>
+		      <a href="movie.html?title=7">7 |</a>
+		      <a href="movie.html?title=8">8 |</a>
+		      <a href="movie.html?title=9">9 |</a>
+		   <br>
+			    <a href="movie.html?title=A">A</a>
+			    <a href="movie.html?title=B">B</a>
+	    		<a href="movie.html?title=C">C</a>
+	    		<a href="movie.html?title=D">D</a>
+	            <a href="movie.html?title=E">E</a>
+	            <a href="movie.html?title=F">F</a>
+	            <a href="movie.html?title=G">G</a>
+			    <a href="movie.html?title=H">H</a>
+			    <a href="movie.html?title=I">I</a>
+			    <a href="movie.html?title=J">J</a>
+			    <a href="movie.html?title=K">K</a>
+			    <a href="movie.html?title=L">L</a>
+			    <a href="movie.html?title=M">M</a>
+			    <a href="movie.html?title=N">N</a>
+			    <a href="movie.html?title=O">O</a>
+			    <a href="movie.html?title=P">P</a>
+			    <a href="movie.html?title=Q">Q</a>
+			    <a href="movie.html?title=R">R</a>
+			    <a href="movie.html?title=S">S</a>
+			    <a href="movie.html?title=T">T</a>
+			    <a href="movie.html?title=U">U</a>
+			    <a href="movie.html?title=V">V</a>
+			    <a href="movie.html?title=W">W</a>
+			    <a href="movie.html?title=X">X</a>
+			    <a href="movie.html?title=Y">Y</a>
+			    <a href="movie.html?title=Z">Z</a>
+	  	</p>
+	  	
+ </div>
+	
+	<!-- include your own JS file -->
+	<script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- 	The 3.2.1 file causes conflict with devbridge autocomplete file, so function is not recognized-->
+
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
